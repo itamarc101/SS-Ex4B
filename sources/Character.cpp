@@ -44,10 +44,10 @@ namespace ariel
         _location = location;
     }
 
-    string Character::print() 
+  string Character::print() 
     {
         string prnt = "Name:" +  _name + " HP: " + to_string(getHP()) + ", ";
-        //prnt += _location.printPoint();
+        prnt += "(" + to_string(_location.getX()) + "," + to_string(_location.getY()) + ")";
         return prnt;
     }
 
