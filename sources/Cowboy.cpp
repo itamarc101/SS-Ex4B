@@ -44,7 +44,7 @@ namespace ariel
         string cowboyData;
         cowboyData = "Cowboy name: [C] " + getName() + "\n";
         if(isAlive()) cowboyData += "HP: " + to_string(getHP()) + "\n";
-        cowboyData += "Location: " + to_string(getLocation().getX()) + "," + to_string(getLocation().getY());
+        cowboyData += "Location: (" + to_string(getLocation().getX()) + "," + to_string(getLocation().getY()) + ")";
         return cowboyData;
     }
 }
