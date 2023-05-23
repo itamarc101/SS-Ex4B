@@ -27,7 +27,7 @@ namespace ariel
         string ninjaData;
         ninjaData = "Ninja name: [N] " + getName() + "\n";
         if(isAlive()) ninjaData += "HP: " + to_string(getHP()) + "\n";
-        ninjaData += "Location: " + to_string(getLocation().getX()) + "," + to_string(getLocation().getY());
+        ninjaData += "Location: (" + to_string(getLocation().getX()) + "," + to_string(getLocation().getY()) + ")";
         return ninjaData;
     }
 }
